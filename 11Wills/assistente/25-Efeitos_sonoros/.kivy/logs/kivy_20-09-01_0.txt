@@ -1,0 +1,56 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/Progs/NeroProgs/Kivy/assistente/25-Efeitos_sonoros/.kivy/logs/kivy_20-09-01_0.txt
+[WARNING] [Config      ] Upgrading configuration in progress.
+[WARNING] [Config      ] Older configuration version detected (0 instead of 21)
+[INFO   ] Kivy: v1.11.1
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.8.3 (default, Jun 15 2020, 02:19:10) 
+[GCC 9.3.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/bin/python3"
+[INFO   ] Factory: 184 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'OpenGL ES 3.0 V@331.0 (GIT@35e467f, Ice9844a736) (Date:04/15/19)'>
+[INFO   ] GL: OpenGL vendor <b'Qualcomm'>
+[INFO   ] GL: OpenGL renderer <b'Adreno (TM) 308'>
+[INFO   ] GL: OpenGL parsed version: 3, 0
+[INFO   ] GL: Texture max size <8192>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] Text: Provider: sdl2
+[INFO   ] Audio: Providers: audio_sdl2 (audio_ffpyplayer ignored)
+[WARNING] Deprecated property "<AliasProperty name=filename>" of object "<kivy.core.audio.audio_sdl2.SoundSDL2 object at 0x8cc82088>" was accessed, it will be removed in a future version
+[INFO   ] GL: NPOT texture support is available
+[WARNING] Base: Unknown <android> provider
+[INFO   ] Base: Start application main loop
+[INFO   ] Base: Leaving application in progress...
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/Progs/NeroProgs/Kivy/assistente/25-Efeitos_sonoros/main.py", line 165, in <module>
+[WARNING] stderr:     Roda().run()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/app.py", line 855, in run
+[WARNING] stderr:     runTouchApp()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/base.py", line 504, in runTouchApp
+[WARNING] stderr:     EventLoop.window.mainloop()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/core/window/window_sdl2.py", line 747, in mainloop
+[WARNING] stderr:     self._mainloop()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/core/window/window_sdl2.py", line 479, in _mainloop
+[WARNING] stderr:     EventLoop.idle()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/base.py", line 339, in idle
+[WARNING] stderr:     Clock.tick()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/clock.py", line 591, in tick
+[WARNING] stderr:     self._process_events()
+[WARNING] stderr:   File "kivy/_clock.pyx", line 384, in kivy._clock.CyClockBase._process_events
+[WARNING] stderr:   File "kivy/_clock.pyx", line 414, in kivy._clock.CyClockBase._process_events
+[WARNING] stderr:   File "kivy/_clock.pyx", line 412, in kivy._clock.CyClockBase._process_events
+[WARNING] stderr:   File "kivy/_clock.pyx", line 167, in kivy._clock.ClockEvent.tick
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/animation.py", line 345, in _update
+[WARNING] stderr:     value = calculate(a, b, t)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/animation.py", line 361, in _calculate
+[WARNING] stderr:     return tp([_calculate(a[x], b[x], t) for x in range(len(a))])
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/animation.py", line 361, in <listcomp>
+[WARNING] stderr:     return tp([_calculate(a[x], b[x], t) for x in range(len(a))])
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/animation.py", line 373, in _calculate
+[WARNING] stderr:     return (a * (1. - t)) + (b * t)
+[WARNING] stderr: TypeError: can't multiply sequence by non-int of type 'float'

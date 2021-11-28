@@ -1,0 +1,51 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/Progamar/Webview/.kivy/logs/kivy_21-11-11_0.txt
+[WARNING] [Config      ] Upgrading configuration in progress.
+[WARNING] [Config      ] Older configuration version detected (0 instead of 21)
+[INFO   ] Kivy: v2.0.0
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.9.7 (default, Oct  9 2021, 08:02:40) 
+[GCC 11.1.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/bin/python3"
+[INFO   ] Factory: 186 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'OpenGL ES 3.0 V@415.0 (GIT@d39f783, I79de86aa2c, 1591296226) (Date:06/04/20)'>
+[INFO   ] GL: OpenGL vendor <b'Qualcomm'>
+[INFO   ] GL: OpenGL renderer <b'Adreno (TM) 308'>
+[INFO   ] GL: OpenGL parsed version: 3, 0
+[INFO   ] GL: Texture max size <8192>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] Text: Provider: sdl2
+[WARNING] Base: Unknown <android> provider
+[INFO   ] Base: Start application main loop
+[INFO   ] GL: NPOT texture support is available
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/core/window/window_sdl2.py", line 234, in _event_filter
+[WARNING] stderr:     elif not app.dispatch('on_pause'):
+[WARNING] stderr:   File "kivy/_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "/storage/emulated/0/Progamar/Webview/main.py", line 52, in on_pause
+[WARNING] stderr:     self.browser.pause()
+[WARNING] stderr:   File "/storage/emulated/0/Progamar/Webview/webview.py", line 143, in pause
+[WARNING] stderr:     self.webview.pauseTimers()
+[WARNING] stderr:   File "jnius/jnius_export_class.pxi", line 857, in jnius.jnius.JavaMethod.__call__
+[WARNING] stderr:   File "jnius/jnius_export_class.pxi", line 954, in jnius.jnius.JavaMethod.call_method
+[WARNING] stderr:   File "jnius/jnius_utils.pxi", line 91, in jnius.jnius.check_exception
+[WARNING] stderr: jnius.jnius.JavaException: JVM exception occurred: java.lang.Throwable: A WebView method was called on thread 'SDLThread'. All WebView methods must be called on the same thread. (Expected Looper Looper (SDLActivity, tid 2) {889eab2} called on null, FYI main Looper is Looper (SDLActivity, tid 2) {889eab2}) java.lang.RuntimeException
+[WARNING] stderr: Exception ignored in: 'kivy.core.window._window_sdl2._WindowSDL2Storage.cb_event_filter'
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/core/window/window_sdl2.py", line 234, in _event_filter
+[WARNING] stderr:     elif not app.dispatch('on_pause'):
+[WARNING] stderr:   File "kivy/_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "/storage/emulated/0/Progamar/Webview/main.py", line 52, in on_pause
+[WARNING] stderr:     self.browser.pause()
+[WARNING] stderr:   File "/storage/emulated/0/Progamar/Webview/webview.py", line 143, in pause
+[WARNING] stderr:     self.webview.pauseTimers()
+[WARNING] stderr:   File "jnius/jnius_export_class.pxi", line 857, in jnius.jnius.JavaMethod.__call__
+[WARNING] stderr:   File "jnius/jnius_export_class.pxi", line 954, in jnius.jnius.JavaMethod.call_method
+[WARNING] stderr:   File "jnius/jnius_utils.pxi", line 91, in jnius.jnius.check_exception
+[WARNING] stderr: jnius.jnius.JavaException: JVM exception occurred: java.lang.Throwable: A WebView method was called on thread 'SDLThread'. All WebView methods must be called on the same thread. (Expected Looper Looper (SDLActivity, tid 2) {889eab2} called on null, FYI main Looper is Looper (SDLActivity, tid 2) {889eab2}) java.lang.RuntimeException
+[INFO   ] Base: Leaving application in progress...

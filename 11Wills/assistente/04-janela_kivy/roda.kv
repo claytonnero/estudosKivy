@@ -1,0 +1,34 @@
+<Pega_kv>: # aqui é chamada a classe em nosso programa Pega_kv
+	
+	# Deve ser identado como em python, para definirmos as funcionalidades de Pega_kv
+	# Então tudo que estiver identado dentro do código, se refere a função na qual é identado
+	# a linguagem kivy entende depois dos : ela interpreta um codigo em python
+	
+	# orientation define a orientacao (vertical, orizontal)
+	orientation: 'vertical'
+	
+	Button: # definimos o botão, note que não é preciso importar nada
+		
+		# Aqui neste espaço identado ào botão definimos o que queremos que elefaça
+
+		# aqui é definido o texto do botão
+		text: 'incrementar'
+
+		#font_size define o tamanho da fonte do Button
+		font_size: 35
+
+		# e da mesma forma que no python on_release muda o nome do texto do label
+		on_release: label.text = str(int(label.text)+1)
+
+	Label:
+		# aqui definimos como reagirá nosso Label e quais suas características
+
+		# neste caso precisamos de criar um id para podermos ter acesso ao componente 
+		id: label
+
+		# o que aparecerá como informação no Label
+		text: '0'
+
+		#font_size define o tamanho da fonte do Label
+		font_size: 30
+

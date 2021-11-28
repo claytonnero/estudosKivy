@@ -1,0 +1,41 @@
+Gerenciador:
+    Menu:
+        name:"menu"
+    Jogo:
+        name:"jogo"
+        
+<Botao@Button>:
+    font_size:45
+    background_color:.4, .6, .2, .5
+<Menu>:
+    canvas:
+        Color:
+            rgba:.5, .7, .3, 1
+        Rectangle:
+            size:self.size
+            pos:self.pos
+    BoxLayout:
+        orientation:"vertical"
+        Widget:
+        BoxLayout:
+            padding:"40dp"
+            spacing:"30dp"            
+            Botao:
+                text:"Jogar"
+                on_release:app.root.current = "jogo"
+            Botao:
+                text:"Sair"
+                on_release:app.stop()
+                 
+<Passaro>:
+    source:"imagems/flp0.png"
+
+<Jogo>:
+    FloatLayout:
+        Passaro:
+            id:player
+            allow_stretch:True
+            size_hint:None, None
+            size:root.height/15, root.height/15
+            x:root.width/20
+            y:root.height/2

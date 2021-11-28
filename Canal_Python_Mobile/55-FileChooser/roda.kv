@@ -1,0 +1,31 @@
+# Ex55 Kv
+
+<Ex55>:
+	label:label
+	orientation:'vertical'
+	BoxLayout:
+		FileChooserListView:
+			canvas.before:
+				Color:
+					rgb:.4, .5, .5
+				Rectangle:
+					pos: self.pos
+					size: self.size
+			on_selection: root.select(*args)
+		FileChooserIconView:
+			canvas.before:
+				Color:
+					rgb: .5, .5, .5
+				Rectangle:
+					pos: self.pos
+					size: self.size
+			on_selection: root.select(*args)
+	Label:
+		id: label
+		size_hint_y: .1
+		canvas.before:
+			Color:
+				rgb: .5, .5, .4
+			Rectangle:
+				pos: self.pos
+				size: self.size 

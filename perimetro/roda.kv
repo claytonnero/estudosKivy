@@ -1,0 +1,37 @@
+<Rodando>:
+    orientation:"vertical"
+    id:rodando
+    Label:
+        canvas.before:
+            Color:
+                rgba:0,1,0,.4
+            Rectangle:
+                pos:self.pos
+                size:self.size
+        text:"Programa  para saber o perímetro\n de um círculo"
+        color:1,0.6,1,1
+        size_hint_y:.3
+    BoxLayout:
+        size_hint_y:None
+        height:"40dp"
+        Label:
+            canvas.before:
+                Color:
+                    rgba:1,0,0,1
+                Rectangle:
+                    pos:self.pos
+                    size:self.size   
+            text:"Raio"
+            size_hint_x:.5
+        TextInput:
+            input_filter:"float"
+            id:text
+    Label:
+        id:lab
+        text:""
+        font_size:"30dp"
+    Button:
+        id:but
+        text:"Calcule"
+        size_hint_y:.2
+        on_release:root.processado(self)

@@ -1,0 +1,100 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/Progamar/python3/Kivy/Editor_imagem/.kivy/logs/kivy_21-08-15_24.txt
+[INFO   ] Kivy: v1.11.1
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.8.3 (default, Jun 15 2020, 02:19:10) 
+[GCC 9.3.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/bin/python3"
+[INFO   ] Logger: Purge log fired. Analysing...
+[INFO   ] Logger: Purge finished!
+[INFO   ] Factory: 184 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+[INFO   ] Text: Provider: sdl2
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'OpenGL ES 3.0 V@415.0 (GIT@d39f783, I79de86aa2c, 1591296226) (Date:06/04/20)'>
+[INFO   ] GL: OpenGL vendor <b'Qualcomm'>
+[INFO   ] GL: OpenGL renderer <b'Adreno (TM) 308'>
+[INFO   ] GL: OpenGL parsed version: 3, 0
+[INFO   ] GL: Texture max size <8192>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/builder.py", line 249, in create_handler
+[WARNING] stderr:     return eval(value, idmap), bound_list
+[WARNING] stderr:   File "<string>", line 7, in <module>
+[WARNING] stderr: NameError: name 'img4' is not defined
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/builder.py", line 690, in _apply_rule
+[WARNING] stderr:     value, bound = create_handler(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/builder.py", line 252, in create_handler
+[WARNING] stderr:     raise BuilderException(rule.ctx, rule.line,
+[WARNING] stderr: kivy.lang.builder.BuilderException: Parser: File "<inline>", line 7:
+[WARNING] stderr: ...
+[WARNING] stderr:       5:    img: img
+[WARNING] stderr:       6:    img3: img3
+[WARNING] stderr: >>    7:    img4: img4
+[WARNING] stderr:       8:    do_default_tab: False
+[WARNING] stderr:       9:
+[WARNING] stderr: ...
+[WARNING] stderr: NameError: name 'img4' is not defined
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/builder.py", line 249, in create_handler
+[WARNING] stderr:     return eval(value, idmap), bound_list
+[WARNING] stderr:   File "<string>", line 7, in <module>
+[WARNING] stderr: 
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/Progamar/python3/Kivy/Editor_imagem/ex_pillow.py", line 62, in <module>
+[WARNING] stderr:     if __name__ == "__main__":
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/app.py", line 829, in run
+[WARNING] stderr:     root = self.build()
+[WARNING] stderr:   File "/storage/emulated/0/Progamar/python3/Kivy/Editor_imagem/ex_pillow.py", line 58, in build
+[WARNING] stderr:     def build(self):
+[WARNING] stderr:   File "/storage/emulated/0/Progamar/python3/Kivy/Editor_imagem/ex_pillow.py", line 40, in __init__
+[WARNING] stderr:     super(RootWidget, self).__init__(**kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/uix/tabbedpanel.py", line 482, in __init__
+[WARNING] stderr:     super(TabbedPanel, self).__init__(**kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/uix/gridlayout.py", line 256, in __init__
+[WARNING] stderr:     super(GridLayout, self).__init__(**kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/uix/layout.py", line 76, in __init__
+[WARNING] stderr:     super(Layout, self).__init__(**kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/uix/widget.py", line 359, in __init__
+[WARNING] stderr:     self.apply_class_lang_rules(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/uix/widget.py", line 467, in apply_class_lang_rules
+[WARNING] stderr:     Builder.apply(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/builder.py", line 536, in apply
+[WARNING] stderr:     self._apply_rule(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/builder.py", line 705, in _apply_rule
+[WARNING] stderr:     raise BuilderException(rule.ctx, rule.line,
+[WARNING] stderr: kivy.lang.builder.BuilderException: Parser: File "<inline>", line 7:
+[WARNING] stderr: ...
+[WARNING] stderr:       5:    img: img
+[WARNING] stderr:       6:    img3: img3
+[WARNING] stderr: >>    7:    img4: img4
+[WARNING] stderr:       8:    do_default_tab: False
+[WARNING] stderr:       9:
+[WARNING] stderr: ...
+[WARNING] stderr: BuilderException: Parser: File "<inline>", line 7:
+[WARNING] stderr: ...
+[WARNING] stderr:       5:    img: img
+[WARNING] stderr:       6:    img3: img3
+[WARNING] stderr: >>    7:    img4: img4
+[WARNING] stderr:       8:    do_default_tab: False
+[WARNING] stderr:       9:
+[WARNING] stderr: ...
+[WARNING] stderr: NameError: name 'img4' is not defined
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/builder.py", line 249, in create_handler
+[WARNING] stderr:     return eval(value, idmap), bound_list
+[WARNING] stderr:   File "<string>", line 7, in <module>
+[WARNING] stderr: 
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/builder.py", line 690, in _apply_rule
+[WARNING] stderr:     value, bound = create_handler(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/builder.py", line 252, in create_handler
+[WARNING] stderr:     raise BuilderException(rule.ctx, rule.line,
+[WARNING] stderr: 

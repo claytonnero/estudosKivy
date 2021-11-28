@@ -1,0 +1,61 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/python3/NeroProgs/kivyMD/ImageList/.kivy/logs/kivy_21-06-03_5.txt
+[INFO   ] Kivy: v1.11.1
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.8.3 (default, Jun 15 2020, 02:19:10) 
+[GCC 9.3.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/bin/python3"
+[INFO   ] KivyMD: v0.104.1
+[INFO   ] Factory: 184 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'OpenGL ES 3.0 V@415.0 (GIT@d39f783, I79de86aa2c, 1591296226) (Date:06/04/20)'>
+[INFO   ] GL: OpenGL vendor <b'Qualcomm'>
+[INFO   ] GL: OpenGL renderer <b'Adreno (TM) 308'>
+[INFO   ] GL: OpenGL parsed version: 3, 0
+[INFO   ] GL: Texture max size <8192>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] Text: Provider: sdl2
+[INFO   ] GL: NPOT texture support is available
+[WARNING] Parser: File "<inline>", line 18:
+...
+     16:            source: "juju.jpg"
+     17:            text: "[size=26]Cat 1[/size]
+>>   18:[size=14]juju.jpg[/size]"
+     19:
+     20:        MyTile:
+...
+Deprecated Kivy lang template syntax used "[size=14]juju.jpg[/size]"". Templates will be removed in a future version
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/python3/NeroProgs/kivyMD/ImageList/smart_title_with_label.py", line 39, in <module>
+[WARNING] stderr:     MyApp().run()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/app.py", line 829, in run
+[WARNING] stderr:     root = self.build()
+[WARNING] stderr:   File "/storage/emulated/0/python3/NeroProgs/kivyMD/ImageList/smart_title_with_label.py", line 36, in build
+[WARNING] stderr:     return Builder.load_string(KV)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/builder.py", line 368, in load_string
+[WARNING] stderr:     parser = Parser(content=string, filename=fn)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/parser.py", line 401, in __init__
+[WARNING] stderr:     self.parse(content)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/parser.py", line 510, in parse
+[WARNING] stderr:     objects, remaining_lines = self.parse_level(0, lines)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/parser.py", line 592, in parse_level
+[WARNING] stderr:     current_object = ParserRule(self, ln, name, rlevel)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/parser.py", line 251, in __init__
+[WARNING] stderr:     self._detect_selectors()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/parser.py", line 295, in _detect_selectors
+[WARNING] stderr:     self._build_template()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/lang/parser.py", line 362, in _build_template
+[WARNING] stderr:     raise ParserException(self.ctx, self.line,
+[WARNING] stderr: kivy.lang.parser.ParserException: Parser: File "<inline>", line 18:
+[WARNING] stderr: ...
+[WARNING] stderr:      16:            source: "juju.jpg"
+[WARNING] stderr:      17:            text: "[size=26]Cat 1[/size]
+[WARNING] stderr: >>   18:[size=14]juju.jpg[/size]"
+[WARNING] stderr:      19:
+[WARNING] stderr:      20:        MyTile:
+[WARNING] stderr: ...
+[WARNING] stderr: Invalid template (must be inside [])

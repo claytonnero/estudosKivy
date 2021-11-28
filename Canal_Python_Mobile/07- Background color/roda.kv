@@ -1,0 +1,22 @@
+<MyButton@Button>:
+	color: [0, 1, 1, 1]
+
+<Rodando>:
+	canvas:
+		Color:
+			rgb: [.5, .5, .95]
+		Rectangle:
+			pos: self.pos
+			size: self.size
+	MyButton:
+		text: 'B1'
+		size_hint: [None, .4]
+		width: 100
+	MyButton:
+		text: 'B2'
+		size_hint: [.4, None]
+		width: 100
+	MyButton:	
+		text: 'B3'
+		size_hint: [None, .6]
+		width: 100

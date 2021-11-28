@@ -1,0 +1,85 @@
+# Eu fiz todo o proceso abaixo numa máquina virtual rodando o xubuntu 16.04 LTS
+# Baixe aqui a ISO da distro mencionada https://xubuntu.org/
+
+# Crie o diretório cristax, na máquina virtual.
+     mkdir ~/cristax
+#    Baixe o arquivo crystax-ndk-10.3.2-linux-x86_64.tar.xz , disponível na página https://www.crystax.net/en/download, para #este diretório.
+#    Desempacote o arquivo. Será criado um diretório crystax-ndk-10.3.2 com os arquivos do NDK, Você irá necessitar do caminho completo deste arquivo na configuração do buildozer.spec.
+
+# Instale as dependências necessárias
+sudo apt install -y python3-pip
+sudo apt install -y build-essential
+sudo apt install -y git
+sudo apt install -y python3
+sudo apt install -y python3-dev
+sudo apt install -y ffmpeg
+sudo apt install -y libsdl2-dev
+sudo apt install -y libsdl2-image-dev
+sudo apt install -y libsdl2-mixer-dev
+sudo apt install -y libsdl2-ttf-dev
+sudo apt install -y libportmidi-dev
+sudo apt install -y libswscale-dev
+sudo apt install -y libavformat-dev
+sudo apt install -y libavcodec-dev
+sudo apt install -y zlib1g-dev
+sudo apt install -y autoconf
+sudo apt install -y automake
+sudo apt install -y libtool
+sudo pip3 install --upgrade cython==0.21
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt install -y ccache
+sudo apt install -y libncurses5:i386
+sudo apt install -y libstdc++6:i386
+sudo apt install -y libgtk2.0-0:i386 
+sudo apt install -y libpangox-1.0-0:i386
+sudo apt install -y libpangoxft-1.0-0:i386
+sudo apt install -y libidn11:i386
+sudo apt install -y openjdk-8-jdk
+sudo apt install -y unzip
+sudo apt install -y zlib1g-dev
+sudo apt install -y zlib1g:i386
+
+# Instalar gstreamer para audio, video (opcional)
+sudo apt install -y libgstreamer1.0
+sudo apt install -y gstreamer1.0-plugins-base
+sudo apt install -y gstreamer1.0-plugins-good
+
+# Atualizar ou Instalar buildozer
+sudo pip3 install -U buildozer
+
+# Instalando o kivy para o Python3 (Opcional)
+# Isso é opcional porque você pode criar os apps na sua máquina real e criar os apks na VM
+sudo add-apt-repository ppa:kivy-team/kivy
+sudo apt update
+sudo apt install -y python3-kivy
+
+# E agora o meu truque:
+# Na linha 793 do arquivo "/usr/local/lib/python3.5/dist-packages/buildozer/targets/android.py":
+	altere: if is_gradle_build
+	para:   if not is_gradle_build     # Isso irá evitar um erro não fatal, porém chato.
+
+# crie o diretorio projeto
+	mkdir ~/projeto
+# salve nele o seu programa (lembre-se que seu programa deve se chamar main.py)
+# entre no diretorio projeto pelo terminal
+# corra o comando: 
+    buildozer init
+# edite o arquivo gerado pelo comando anterior:
+    vi buildozer.spec
+# As linhas abaixo devem ficar assim, caso não estejam:
+    package.name = myapp
+    package.domain = com.mydomain
+    requirements = kivy,python3crystax
+    android.ndk = 10.3.2
+    android.ndk_path = /home/kivy/cristax/crystax-ndk-10.3.2
+
+# Finalmente compile o APK:
+    buildozer android debug
+	
+# Bem é isso!
+
+Referência:
+    1. https://kivy.org/docs/installation/installation-linux.html#ubuntu-11-10-or-newer
+    2. https://cadernodelaboratorio.com.br/2017/11/17/ambiente-desenvolvimento-kivypython3-no-virtualbox/
+    3. Eu 

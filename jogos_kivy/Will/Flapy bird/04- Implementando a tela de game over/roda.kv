@@ -1,0 +1,86 @@
+Manager:
+	Menu:
+		name:'menu'
+	Game:
+		name:'game'
+	GameOver:
+		name:'gameOver'
+
+<MenuButton@Button>:
+	font_size:'50sp'
+	background_normal:'../dados/botão_normal.png'
+	background_down:'../dados/botão_apertado.png'
+	border:0,0,0,0 
+
+<Menu>:
+	BoxLayout:
+		canvas:
+			Color:
+				rgba:1,1,1,1
+			Rectangle:
+				size:self.size
+				pos:self.pos
+				source:'../dados/menu.png'
+
+		orientation:'vertical'
+		padding:'100dp', '50dp'
+		spacing:'50dp'
+		Widget:
+		BoxLayout:
+			padding:'40dp'
+			spacing:'30dp'
+			MenuButton:
+				text:'Começar'
+				on_release:app.root.current = 'game'
+			MenuButton:
+				text:'Sair'
+				on_release:app.stop()
+<Player>:
+	source:'../dados/player.png'
+	
+<Game>:
+	FloatLayout:
+		Player:
+			#este id é para acessarmos o player lá no python
+			id:player
+			#esta opção (allow_stretch) deixa a imagem independente da
+			#resolução da imagem
+
+			allow_stretch:True
+			#vamos definir o tamanho fixo e para isso precizamos
+			#desligar o (size_hint)
+
+			size_hint:None,None
+			#para definirmos o tamanho, o (size) será definido como
+			# uma fração da tela, no caso o (root.height) é o 
+			# tamanho da tela
+			size:root.height/15, root.height/15
+			
+			#e aqui vamos definir a posição x (largura) com base na 			# largura da tela (root.width)
+			x:root.width/20
+			# e o y (alturada tela) para a metade da tela!
+			y:root.height/2
+
+<GameOver>:
+	BoxLayout:
+		canvas:
+			Color:
+				rgba:1,1,1,1
+			Rectangle:
+				size:self.size
+				pos:self.pos
+				source:'../dados/game_over.png'
+
+		orientation:'vertical'
+		padding:'600dp', '70dp'
+		spacing:'100dp'
+		Widget:
+            size_hint_y:1.5
+        Widget:
+            size_hint_y:1.5
+		MenuButton:
+			text:'Jogar Novamente'
+			on_release:app.root.current = 'game'
+		MenuButton:
+			text:'Exit'
+			on_release:app.stop()

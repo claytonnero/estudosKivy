@@ -1,0 +1,1 @@
+p4a apk --private  arq --package=org.example.myapp --name "My application" --version 0.1 --bootstrap=sdl2 --requirements=python3,kivy

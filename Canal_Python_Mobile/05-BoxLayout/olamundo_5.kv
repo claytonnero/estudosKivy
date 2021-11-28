@@ -1,0 +1,21 @@
+# olamundo_5.kv (pos_hint, size_hint)
+
+<MinhaCaixa>:
+	orientation:'vertical'
+	spacing: 50
+	padding:[20,40,60,80]
+	Button:
+		text: "B1"
+		on_press: print('--> B1', 'Posição', self.pos)
+		pos_hint: {'x' : .1}
+		size_hint: [.2, 1]
+	Button:
+		text: "B2"
+		on_press: print('--> B2', 'Tamanho{}\n'.format(self.size), 'Posição {}\n'.format(self.pos))
+		pos_hint: {'center_x' : .3} # o pos_hint pode ser passado como argumento um dicionário
+		size_hint: [.2, 2]
+	Button:
+		text: "B3"
+		on_press: print('--> B3', 'Posição {}\n'.format(self.pos))
+		pos_hint: {'right' : 1}
+		size_hint: [.4, 1] # no size_hint pode ser passado uma lista

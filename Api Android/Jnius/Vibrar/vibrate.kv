@@ -1,0 +1,14 @@
+<Roda>:
+    orientation:"vertical"
+    Widget:
+    TextInput:
+        id:ent
+        hint_text:"Quantos segundos quer vibrar seu celular"
+        multiline:False
+        size_hint_y:None
+        height:"40dp"
+        input_filter:"int"
+    Widget:
+    Button:
+        text:"Vibrar"
+        on_release:root.solto(self)
